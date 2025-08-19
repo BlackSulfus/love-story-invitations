@@ -2,41 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Wedding invitation design system with romantic colors and elegant animations */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 350 20% 98%;
+    --foreground: 345 15% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 345 15% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 345 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 345 70% 65%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 60% 95%;
+    --secondary-foreground: 345 50% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 350 15% 96%;
+    --muted-foreground: 345 20% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 50 90% 85%;
+    --accent-foreground: 345 50% 35%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 345 20% 90%;
+    --input: 345 20% 90%;
+    --ring: 345 70% 65%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Wedding theme colors */
+    --romantic-pink: 345 70% 85%;
+    --soft-cream: 45 30% 95%;
+    --golden: 45 90% 75%;
+    --sage: 120 20% 85%;
+    --dusty-rose: 345 40% 70%;
+
+    /* Gradients */
+    --gradient-romantic: linear-gradient(135deg, hsl(var(--romantic-pink)) 0%, hsl(var(--soft-cream)) 100%);
+    --gradient-golden: linear-gradient(45deg, hsl(var(--golden)) 0%, hsl(45 95% 85%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(var(--soft-cream)) 0%, hsl(var(--romantic-pink)) 100%);
+
+    /* Shadows */
+    --shadow-romantic: 0 10px 40px -10px hsl(var(--primary) / 0.2);
+    --shadow-golden: 0 5px 20px -5px hsl(var(--golden) / 0.3);
+
+    /* Animations */
+    --transition-romantic: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-float: transform 3s ease-in-out infinite;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +119,92 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Wedding specific styles */
+  .gradient-romantic {
+    background: var(--gradient-romantic);
+  }
+  
+  .gradient-golden {
+    background: var(--gradient-golden);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .shadow-romantic {
+    box-shadow: var(--shadow-romantic);
+  }
+  
+  .shadow-golden {
+    box-shadow: var(--shadow-golden);
+  }
+  
+  .transition-romantic {
+    transition: var(--transition-romantic);
+  }
+
+  /* Floating animation for decorative elements */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .float-delayed {
+    animation: float 6s ease-in-out infinite 2s;
+  }
+
+  /* Fade in animations */
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .fade-in-left {
+    animation: fadeInLeft 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  
+  .fade-in-right {
+    animation: fadeInRight 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  /* Staggered animation delays */
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-600 { animation-delay: 600ms; }
+  .animate-delay-800 { animation-delay: 800ms; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
