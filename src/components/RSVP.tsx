@@ -52,7 +52,7 @@ const RSVP = () => {
             Подтверждение присутствия
           </h2>
           <p className="font-sans text-lg text-muted-foreground">
-            Пожалуйста, ответьте до 1 мая 2024 года
+            Пожалуйста, ответьте до 1 мая 2026 года
           </p>
         </div>
 

@@ -17,19 +17,19 @@ const WeddingFooter = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <Card className="shadow-romantic fade-in-left">
             <CardContent className="p-8 text-center">
-              <h3 className="font-elegant text-xl text-primary mb-4">Александр</h3>
+              <h3 className="font-elegant text-xl text-primary mb-4">Вячеслав</h3>
               <div className="space-y-3">
                 <div className="flex items-center justify-center gap-2">
                   <Phone className="w-5 h-5 text-primary" />
-                  <span>+7 (999) 123-45-67</span>
+                  <span>+7 (977) 893-31-62</span>
                 </div>
                 <div className="flex items-center justify-center gap-2">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span>alexander@email.com</span>
+                  <span>vyac.volk.2018@gmail.com</span>
                 </div>
                 <div className="flex items-center justify-center gap-2">
                   <MessageCircle className="w-5 h-5 text-primary" />
-                  <span>@alexander_wedding</span>
+                  <span>@BlackSulfus</span>
                 </div>
               </div>
             </CardContent>
@@ -37,19 +37,19 @@ const WeddingFooter = () => {
 
           <Card className="shadow-romantic fade-in-right">
             <CardContent className="p-8 text-center">
-              <h3 className="font-elegant text-xl text-primary mb-4">Екатерина</h3>
+              <h3 className="font-elegant text-xl text-primary mb-4">Алёна</h3>
               <div className="space-y-3">
                 <div className="flex items-center justify-center gap-2">
                   <Phone className="w-5 h-5 text-primary" />
-                  <span>+7 (999) 765-43-21</span>
+                  <span>+7 (929) 654-24-34</span>
                 </div>
                 <div className="flex items-center justify-center gap-2">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span>ekaterina@email.com</span>
+                  <span>zonova2006@yandex.ru</span>
                 </div>
                 <div className="flex items-center justify-center gap-2">
                   <MessageCircle className="w-5 h-5 text-primary" />
-                  <span>@ekaterina_wedding</span>
+                  <span>@z_alenchik</span>
                 </div>
               </div>
             </CardContent>
@@ -60,7 +60,7 @@ const WeddingFooter = () => {
           <Card className="gradient-romantic shadow-romantic">
             <CardContent className="p-8">
               <p className="font-script text-3xl text-primary mb-4">
-                С любовью, Александр & Екатерина
+                С любовью, Вячеслав & Алёна
               </p>
               <p className="text-muted-foreground">
                 Мы не можем дождаться этого особенного дня с вами!

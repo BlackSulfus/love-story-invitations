@@ -24,20 +24,22 @@ const WeddingHero = () => {
       {/* Main content */}
       <div className="relative z-10 text-center px-4 max-w-4xl">
         <div className="fade-in-up">
-          <h1 className="font-script text-6xl md:text-8xl text-primary mb-4">
-            Александр & Екатерина
+          <h1 className="font-script text-5xl md:text-7xl text-primary mb-2">
+            Вячеслав & Алёна
           </h1>
         </div>
         
         <div className="fade-in-up animate-delay-200">
-          <p className="font-elegant text-xl md:text-2xl text-foreground mb-2">
-            приглашают вас разделить радость
-          </p>
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <div className="font-elegant text-4xl md:text-5xl text-primary">В</div>
+            <div className="w-12 h-0.5 bg-primary"></div>
+            <div className="font-elegant text-4xl md:text-5xl text-primary">А</div>
+          </div>
         </div>
         
         <div className="fade-in-up animate-delay-400">
           <p className="font-elegant text-2xl md:text-3xl text-primary font-semibold mb-8">
-            15 июня 2024
+            16 июня 2026
           </p>
         </div>
         
